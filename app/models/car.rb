@@ -1,4 +1,4 @@
-class Car
+cclass Car
 
   attr_reader :make, :model, :classification, :owner
   @@all = []

@@ -19,14 +19,10 @@ class CarOwner
     end
   end
 
-  def sum_of_all_cars
+  def self.average_car
     self.all.map do |owner|
       owner.cars.length
-    end.sum
-  end
-
-  def self.average_car
-    sum_of_all_cars / self.all.length
+    end.sum / self.all.length
   end
 
   def self.all
